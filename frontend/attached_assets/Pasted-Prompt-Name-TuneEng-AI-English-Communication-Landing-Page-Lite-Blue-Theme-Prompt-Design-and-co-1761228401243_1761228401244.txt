@@ -1,0 +1,83 @@
+Prompt Name: TuneEng AI English Communication Landing Page (Lite Blue Theme)
+
+Prompt:
+
+Design and code a professional, premium-quality React landing page called TuneEng AI – Master English Communication, matching the layout, color tone, typography, and modern UI as shown in the provided reference image.
+
+The theme must be Lite Blue, clean, and soft gradient-based, with a minimal glassmorphism effect, subtle shadows, and soft-rounded edges throughout.
+
+The layout structure should be exactly like the reference:
+
+🔹 Header Section
+
+A small tagline at top: "TuneEng: Tune in Fluency, Tune out Hesitancy."
+
+Main title (two-line):
+"Master English Communication with"
+"AI Precision"
+→ Make the text large, bold, and center-aligned.
+
+Subheading: "Learn Listening, Reading, and Writing — guided by AI, all personalized by precision."
+
+Two buttons:
+
+Primary (Blue Gradient): “Pre-Register Now”
+
+Secondary (Outline): “Watch Demo →”
+
+Below the buttons, 4 feature cards with icons (horizontal):
+
+🎧 Listen & Learn – “AI-guided pronunciation and comprehension.”
+
+🎤 Speak Confidently – “Real-time fluency and accent training.”
+
+💬 Speak Confidently – “Conversational AI for daily practice.”
+
+✍️ Write Better – “Grammar correction and expression improvement.”
+
+🔹 Middle Section ("Built for the Bold")
+
+Title: "Built for the Bold"
+
+Paragraph: "TuneEng is built by educators and engineers who understand how difficult fluency can be. With voice analysis and precision AI feedback, TuneEng helps you communicate with confidence, anywhere."
+
+A subtle animated illustration or laptop image in the center with audio waves.
+
+🔹 Features Section ("What You Get in Early Access")
+
+Title: "What You Get in Early Access"
+
+Three info cards in a row:
+
+✅ “AI-powered English skill map”
+See your strengths and weaknesses in real time.
+
+📘 “Daily lesson plans”
+Interactive lessons that fit your schedule.
+
+💬 “Community access”
+Join learners and AI coaches from around the world.
+
+🔹 Final CTA Section
+
+Subtitle: “Be the first to experience / the future of English fluency.”
+
+Centered button: “Pre-Register Free →” (Blue gradient)
+
+Small note below: “Limited early access • No cost • Instant updates”
+
+🎨 Styling Guidelines
+
+Font: Use modern, rounded sans-serif (e.g., Inter, Poppins, or Satoshi).
+
+Primary color: #A7C7F9 gradient with subtle #DCEBFF backgrounds.
+
+Rounded corners: border-radius: 2xl
+
+Buttons: gradient hover with glow effect
+
+Section backgrounds: alternating white and light-blue gradient
+
+Fully responsive for desktop, tablet, and mobile
+
+Smooth fade-in animations on scroll (Framer Motion or CSS animations)

@@ -1,0 +1,173 @@
+/**
+ * Report Page Styles
+ */
+
+.report-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 2rem;
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.report-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.report-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.score-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.score-circle {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.score-value {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.score-label {
+  font-size: 2rem;
+  color: #666;
+}
+
+.category-section,
+.chart-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.feedback-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.strengths,
+.weaknesses {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.strengths h2 {
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+.weaknesses h2 {
+  color: #f44336;
+  margin-bottom: 1rem;
+}
+
+.strengths ul,
+.weaknesses ul {
+  list-style: none;
+  padding: 0;
+}
+
+.strengths li,
+.weaknesses li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.strengths li:last-child,
+.weaknesses li:last-child {
+  border-bottom: none;
+}
+
+.recommendations-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations-section h2 {
+  margin-bottom: 1rem;
+}
+
+.recommendations-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendations-section li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.recommendations-section li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.recommendations-section li:last-child {
+  border-bottom: none;
+}
+
+.analysis-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-section h2 {
+  margin-bottom: 1rem;
+}
+
+.analysis-section p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.loading,
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #f44336;
+}
+
