@@ -1,2 +1,0 @@
-"""TuneEng Backend Application Package."""
-

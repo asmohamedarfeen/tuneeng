@@ -1,4 +1,0 @@
-/**
- * Mock Interview Module
- */
-
