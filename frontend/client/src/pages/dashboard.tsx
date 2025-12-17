@@ -54,13 +54,7 @@ export default function Dashboard() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleAssessmentsClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Assessments Coming Soon",
-      description: "This feature is under development. Stay tuned!",
-    });
-  };
+
 
   const handleCommunityClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -80,7 +74,7 @@ export default function Dashboard() {
       {/* Top Navigation Bar - Exactly as Figma */}
       <div className="border-b border-gray-200 bg-gray-50">
         <div className="px-10 py-3 flex items-center justify-between">
-          <Link href="/dashboard" className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
+          <Link href="/" className="flex items-center gap-4 cursor-pointer hover:opacity-80 transition-opacity">
             <Menu className="h-4 w-4 text-gray-900" />
             <span className="text-lg font-bold text-gray-900">TuneEng</span>
           </Link>
@@ -95,13 +89,9 @@ export default function Dashboard() {
             <Link href="/learn" className={`text-sm font-medium ${location === '/learn' ? 'text-blue-600 font-bold' : 'text-gray-900'}`}>
               Learn
             </Link>
-            <a
-              href="#"
-              onClick={handleAssessmentsClick}
-              className="text-sm font-medium text-gray-900 hover:text-blue-600 transition-colors cursor-pointer"
-            >
+            <Link href="/assessments" className={`text-sm font-medium ${location === '/assessments' ? 'text-blue-600 font-bold' : 'text-gray-900'}`}>
               Assessments
-            </a>
+            </Link>
             <a
               href="#"
               onClick={handleCommunityClick}

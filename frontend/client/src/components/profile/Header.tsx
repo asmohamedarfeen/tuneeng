@@ -7,18 +7,19 @@ import ProfileAvatar from "@/components/ProfileAvatar";
  */
 const ProfileHeader = () => {
   return (
-    <header className="flex justify-between items-center w-full box-border px-10 py-3 border-b-[#E5E8EB] border-b border-solid max-md:px-5 max-md:py-3 max-sm:px-4 max-sm:py-3">
+    <header className="flex justify-between items-center w-full box-border px-10 py-3 border-b-[#E5E8EB] border-b border-solid max-md:px-5 max-md:py-3 max-sm:px-4 max-sm:py-3 relative">
       <div className="flex items-center gap-4">
         <div className="flex flex-col items-start" />
         <div className="flex flex-col items-start">
-          <Link href="/dashboard">
+          <Link href="/">
             <h1 className="text-[#0D121C] text-lg font-bold leading-[23px] cursor-pointer hover:opacity-80">
               TuneEng
             </h1>
           </Link>
         </div>
       </div>
-      <div className="flex justify-end items-start gap-8 flex-[1_0_0] max-sm:gap-4">
+
+      <div className="absolute left-1/2 transform -translate-x-1/2">
         <nav className="flex h-10 items-center gap-9 max-md:gap-6 max-sm:hidden">
           <Link href="/dashboard" className="text-[#0D121C] text-sm font-medium leading-[21px] hover:opacity-80">
             Dashboard
@@ -33,6 +34,9 @@ const ProfileHeader = () => {
             Profile
           </Link>
         </nav>
+      </div>
+
+      <div className="flex justify-end items-center gap-8 max-sm:gap-4">
         <div className="flex h-10 max-w-[480px] justify-center items-center gap-2 bg-[#E5EBF5] px-2.5 py-0 rounded-xl">
           <div className="flex flex-col items-center flex-[1_0_0]">
             <div className="flex-[1_0_0] w-full relative">

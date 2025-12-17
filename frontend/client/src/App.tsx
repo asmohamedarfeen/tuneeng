@@ -31,10 +31,10 @@ const NotFoundLazyComponent = lazy(notFoundPage.component);
  * Wrapper component for lazy-loaded pages
  * Handles document title updates and suspense
  */
-function LazyPageWrapper({ 
-  component: Component, 
-  title 
-}: { 
+function LazyPageWrapper({
+  component: Component,
+  title
+}: {
   component: React.LazyExoticComponent<React.ComponentType<any>>;
   title?: string;
 }) {

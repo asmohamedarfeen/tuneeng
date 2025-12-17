@@ -4,7 +4,6 @@ FastAPI Backend for TuneEng LSRW Platform
 Main application entry point with CORS configuration and route registration.
 Serves both the API and the frontend static files.
 """
-
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse

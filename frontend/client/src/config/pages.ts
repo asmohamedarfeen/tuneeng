@@ -66,6 +66,16 @@ export const pages: PageConfig[] = [
     title: "Practice Hub - TuneEng AI",
   },
   {
+    path: "/assessments",
+    component: () => import("@/pages/assessments"),
+    title: "Assessments - TuneEng AI",
+  },
+  {
+    path: "/assessments/:id",
+    component: () => import("@/pages/assessment-detail"),
+    title: "Assessment - TuneEng AI",
+  },
+  {
     path: "/contact",
     component: () => import("@/pages/contact"),
     title: "Contact Support - TuneEng AI",

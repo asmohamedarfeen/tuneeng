@@ -18,13 +18,23 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base, Session
 
 
+from pathlib import Path
+
 # Read DATABASE_URL from environment; fall back to local SQLite file.
 DATABASE_URL = os.getenv("DATABASE_URL")
 if not DATABASE_URL:
-    # Local development default – creates tuneeng.db in project root.
-    DATABASE_URL = "sqlite:///../db/tuneeng.db"
+    # Build absolute path to db file to avoid CWD issues
+    # database.py is in backend/app/, so we go up 2 levels to backend/, then up to project root
+    BASE_DIR = Path(__file__).resolve().parent.parent.parent
+    DB_DIR = BASE_DIR / "db"
+    DB_FILE = DB_DIR / "tuneeng.db"
+    
+    # Ensure db directory exists
+    DB_DIR.mkdir(exist_ok=True)
+    
+    DATABASE_URL = f"sqlite:///{DB_FILE}"
     print(
-        "⚠️  DATABASE_URL not set. Using local SQLite database at '../db/tuneeng.db'. "
+        f"⚠️  DATABASE_URL not set. Using local SQLite database at '{DB_FILE}'. "
         "Set DATABASE_URL to use PostgreSQL."
     )
 
